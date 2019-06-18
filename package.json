@@ -1,6 +1,6 @@
 {
-  "name": "vue-feedback",
-  "version": "1.0.0",
+  "name": "feedback-vue",
+  "version": "1.0.1",
   "description": "点击反馈指令",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "vue",
     "plugin"
   ],
-  "author": "rzd",
+  "author": "renzhendong",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Easte-r/v-feedback/issues"
