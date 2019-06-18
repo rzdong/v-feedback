@@ -1,0 +1,24 @@
+{
+  "name": "vue-feedback",
+  "version": "1.0.0",
+  "description": "点击反馈指令",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Easte-r/v-feedback.git"
+  },
+  "keywords": [
+    "\u0016directive",
+    "vue",
+    "plugin"
+  ],
+  "author": "rzd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Easte-r/v-feedback/issues"
+  },
+  "homepage": "https://github.com/Easte-r/v-feedback#readme"
+}

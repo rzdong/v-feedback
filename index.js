@@ -1,4 +1,4 @@
-const feedback = {
+var feedback = {
   install(Vue){
      /**
      * v-feedback
@@ -45,7 +45,7 @@ const feedback = {
                 ctn = document.createTextNode(`.${idClass}{opacity:${opacity}}`);
             }
             style.appendChild(ctn);
-            (el.parentNode as HTMLBaseElement).insertBefore(style, el);
+            el.parentNode.insertBefore(style, el);
             el.addEventListener('touchstart', (e) => {
                 el.classList.toggle(idClass);
             }, false);
