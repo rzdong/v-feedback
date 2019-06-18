@@ -2,7 +2,7 @@
 vue指令
 
 # 安装
-npm install
+npm install feedback-vue --save
 
 # 使用
 ```
