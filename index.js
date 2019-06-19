@@ -29,21 +29,21 @@ var feedback = {
                 if (binding.value > 0 && binding.value < 1) {
                     opacity = binding.value;
                 }
-                ctn = document.createTextNode('.' + idClass + 'opacity:' + opacity);
+                ctn = document.createTextNode('.' + idClass + '{opacity:' + opacity + '}');
             }
             if (binding.modifiers.scale) {
                 let scale = 0.75;
                 if (binding.value > 0 && binding.value < 1) {
                     scale = binding.value;
                 }
-                ctn = document.createTextNode('.' + idClass + '-webkit-transform-origin: center center;-webkit-transform:scale(' + scale +')')
+                ctn = document.createTextNode('.' + idClass + '{-webkit-transform-origin: center center;-webkit-transform:scale(' + scale +')}')
             }
             if (!binding.modifiers.opacity && !binding.modifiers.scale) {
                 let opacity = 0.8;
                 if (binding.value > 0 && binding.value < 1) {
                     opacity = binding.value;
                 }
-                ctn = document.createTextNode('.' + idClass + 'opacity:' + opacity);
+                ctn = document.createTextNode('.' + idClass + '{opacity:' + opacity + '}');
             }
             style.appendChild(ctn);
             el.parentNode.insertBefore(style, el);
