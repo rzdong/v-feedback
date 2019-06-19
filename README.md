@@ -20,3 +20,7 @@ v-feedback.opacity="0.8"
 ```
 <p v-feedback>默认修饰符 opacity </p>
 ```
+
+# 效果
+按下指令所在的元素，该元素透明度降低或者缩小尺寸, 抬起后恢复
+
