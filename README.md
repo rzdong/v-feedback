@@ -5,9 +5,14 @@ vue指令
 npm install feedback-vue --save
 
 # 使用
+
 ```
-v-feedback.scale="0.8"
-v-feedback.opacity="0.8"
+import Vue from 'vue';
+import feedback from 'feedback-vue';
+Vue.use(feedback);
+
+v-feedback.scale="0.8";
+v-feedback.opacity="0.8";
 ```
 
 # API
