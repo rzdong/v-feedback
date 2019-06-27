@@ -5,7 +5,6 @@ var feedback = {
          * v-feedback
          *      .opacity = 0.75
          *      .scale = 0.8
-         *      .translate = 1
          * 
          * 实现方法
          *      event
@@ -17,7 +16,7 @@ var feedback = {
          * 使用 
          * v-feedback.scale="0.8"
          * v-feedback.opacity="0.8"
-         * v-feedback.translate="1"
+         * 
          */
         Vue.directive('feedback', {
             inserted(el, binding, vnode) {
@@ -56,10 +55,15 @@ var feedback = {
                 style.appendChild(ctn);
                 el.parentNode.insertBefore(style, el);
                 el.addEventListener('touchstart', (e) => {
-                    el.classList.toggle(idClass);
+                    if (!el.classList.contains(idClass)) {
+                        el.classList.add(idClass);
+                    }
+
                 }, false);
                 el.addEventListener('touchend', () => {
-                    el.classList.toggle(idClass);
+                    if (el.classList.contains(idClass)) {
+                        el.classList.remove(idClass);
+                    }
                 }, false);
 
 

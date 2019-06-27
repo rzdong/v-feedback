@@ -13,6 +13,7 @@ Vue.use(feedback);
 
 v-feedback.scale="0.8";
 v-feedback.opacity="0.8";
+v-feedback.translate="1";
 ```
 
 # API
