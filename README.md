@@ -14,6 +14,7 @@ v-feedback.opacity="0.8"
 ```
 可选修饰符 scale  默认值  0.75
 可选修饰符 opacity  默认值  0.8
+可选修饰符 translate 默认值  1
 ```
 
 # 备注
