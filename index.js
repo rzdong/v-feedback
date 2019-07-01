@@ -65,6 +65,11 @@ var feedback = {
                         el.classList.remove(idClass);
                     }
                 }, false);
+                el.addEventListener('touchcancel', () => {
+                    if (el.classList.contains(idClass)) {
+                        el.classList.remove(idClass);
+                    }
+                }, false);
 
 
             },
