@@ -1,23 +1,6 @@
 "use strict";
 var feedback = {
     install(Vue) {
-        /**
-         * v-feedback
-         *      .opacity = 0.75
-         *      .scale = 0.8
-         * 
-         * 实现方法
-         *      event
-         *      active
-         * 变化类型
-         *      style
-         *      css
-         * 
-         * 使用 
-         * v-feedback.scale="0.8"
-         * v-feedback.opacity="0.8"
-         * 
-         */
         Vue.directive('feedback', {
             inserted(el, binding, vnode) {
                 // touchstart
