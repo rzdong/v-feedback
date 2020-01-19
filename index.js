@@ -1,5 +1,5 @@
 "use strict";
-var feedback = {
+const feedback = {
     install(Vue) {
         Vue.directive('feedback', {
             inserted(el, binding, vnode) {
@@ -7,6 +7,8 @@ var feedback = {
                 const idClass = 'feedback' + Date.now() + Math.floor(Math.random() * 100000000);
                 const style = document.createElement('style');
                 let ctn;
+
+                // opacity属性
                 if (binding.modifiers.opacity) {
                     let opacity = 0.8;
                     if (binding.value > 0 && binding.value < 1) {
@@ -14,6 +16,8 @@ var feedback = {
                     }
                     ctn = document.createTextNode('.' + idClass + '{opacity:' + opacity + ';}');
                 }
+
+                // 缩放属性
                 if (binding.modifiers.scale) {
                     let scale = 0.75;
                     if (binding.value > 0 && binding.value < 1) {
@@ -21,6 +25,8 @@ var feedback = {
                     }
                     ctn = document.createTextNode('.' + idClass + '{-webkit-transform-origin: center center;-webkit-transform:scale(' + scale + ')}')
                 }
+
+                // 平移变换属性
                 if (binding.modifiers.translate) {
                     let translate = 1;
                     if (binding.value > -5 && binding.value < 5) {
@@ -28,6 +34,8 @@ var feedback = {
                     }
                     ctn = document.createTextNode('.' + idClass + '{transform: translate3d(' + translate + 'px,' + translate + 'px,0) }');
                 }
+
+                // 如果没有三者之一，默认使用opacity属性
                 if (!binding.modifiers.opacity && !binding.modifiers.scale && !binding.modifiers.translate) {
                     let opacity = 0.8;
                     if (binding.value > 0 && binding.value < 1) {

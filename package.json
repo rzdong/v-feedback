@@ -1,24 +1,24 @@
 {
   "name": "feedback-vue",
-  "version": "1.0.8",
-  "description": "点击反馈指令",
+  "description": "基于vue的点击反馈指令",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Easte-r/v-feedback.git"
+    "url": "git+https://github.com/rzdong/v-feedback.git"
   },
   "keywords": [
-    "\u0016directive",
+    "directive",
     "vue",
     "plugin"
   ],
-  "author": "renzhendong",
+  "author": "rzdong",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Easte-r/v-feedback/issues"
+    "url": "https://github.com/rzdong/v-feedback/issues"
   },
-  "homepage": "https://github.com/Easte-r/v-feedback#readme"
+  "homepage": "https://github.com/rzdong/v-feedback#readme",
+  "version": "1.0.9"
 }
